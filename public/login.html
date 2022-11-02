@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <!-- ---------font awesome link--------- -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- ---------google font link--------- -->
+    <link href="https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Dosis:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- ---------css link--------- -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+
+<body class=" bg-[#fdfdfd]">
+
+    <!-- ----------background bolb icon--------- -->
+    <img class="login_bolb fixed h-full -z-20" src="./photo/blob-haikei (2).svg" alt="">
+
+    <!-- ---container part--------- -->
+    <div class="container w-9/12  m-auto flex justify-between items-cente  relative pt-32 ">
+    
+        <!-- -------left bar------------ -->
+        <div class="womenicon w-3/6">
+            <img class="w-full" src="./photo/undreaw women icon.svg" alt="">
+        </div>
+
+        <!-- --------right bar-------------- -->
+        <div class="login_container w-2/6">
+
+        <!-- --------top icon text--------------- -->
+            <div class="flex items-center flex-col">
+                <img class="w-16 h-16" src="./photo/undraw avatar.svg" alt="">
+                <h1 class="text-4xl py-4 font-[Dosis] font-bold text-[#EF0BCE] ">LOGIN</h1>
+            </div>
+
+            <!-- --------login form------------- -->
+            <form class="flex flex-col w-full " action="#">
+
+            <!-- ----------input field and icon--------- -->
+                <div class="input-div flex items-center py-6 w-full ">
+                    <div class="usericon w-1/12">
+                        <i class="fa-solid fa-user text-[#EF0BCE] text-xl"></i>
+                    </div>
+                    <div class="pl-4 w-11/12">
+                        <input id="username" class="font-[Dosis] border-[#EF0BCE] border-2 pl-3 py-px text-lg rounded-full w-full caret-[#EF0BCE] shadow-inner" name="username" type="text" placeholder="Username">
+                    </div>
+
+                </div>
+
+            <!-- ----------input field and icon--------- -->
+                <div class="input-div flex items-center  w-full">
+                    <div class="usericon w-1/12">
+                        <i class="fa-solid fa-lock text-[#EF0BCE] text-xl"></i>
+                    </div>
+                    <div class="pl-4 w-11/12 ">
+                        <input id="password" class="font-[Dosis] border-[#EF0BCE] border-2 pl-3 py-px text-lg rounded-full w-full caret-[#EF0BCE] shadow-inner" name="password" type="password" placeholder="Password">
+                    </div>
+                    
+                </div>
+
+            <!-- ----------forget password--------- -->
+                <a href="#" class="font-[Dosis] text-blue-600 text-base underline hover:text-red-600 pt-px text-right">Forget Password?</a>
+                
+                <input class="font-[Dosis] bg-[#EF0BCE] w-full mt-5 rounded-full text-white py-2 cursor-pointer transition-all hover:bg-[#9e288c]" type="submit" value="LOGIN">
+
+            </form>
+
+            <!-- ----------register link--------- -->
+            <div class="flex mt-12 justify-center items-center gap-2">
+                <h3 class="">Don't have an account?</h3>
+                <a href="./register.html"><button  class="font-[Dosis] bg-[#765d72] rounded-full text-white py-2 px-4 cursor-pointer transition-all hover:bg-[#443742] ">Create a account</button></a>
+                
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- -------js link---------- -->
+    <script>
+        username.onfocus = ()=>{
+            username.style.outline = "none"
+            username.style.border = "2px solid green"
+            username.style.transition = ".3s"
+        }
+        username.onblur = ()=>{
+            username.style.border = "2px solid #EF0BCE"
+        }
+        password.onfocus = ()=>{
+            password.style.outline = "none"
+            password.style.border = "2px solid green"
+            password.style.transition = ".3s"
+        }
+        password.onblur = ()=>{
+            password.style.border = "2px solid #EF0BCE"
+        }
+    </script>
+
+
+</body>
+</html>

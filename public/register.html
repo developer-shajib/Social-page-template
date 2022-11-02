@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <!-- ---------font awesome link--------- -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- ---------google font link--------- -->
+    <link href="https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Dosis:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- ---------css link--------- -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+
+<body class="bg-[#ad0ea4]">
+
+    <div class="main flex items-center">
+        <!-- -------background bolb icon----------- -->
+        <img class="login_bolb fixed h-full -z-20" src="./photo/logi bolb.svg" alt="">
+
+        <!-- ---------container----------- -->
+        <div class="container w-9/12 m-auto flex justify-between  bg-white relative py-10 px-10 rounded-xl shadow-2xl ">
+
+            <!-- ----left bar----- -->
+            <div class="w-7/12 ">
+
+                <!-- --------register top icon and text----------- -->
+                <div class="flex items-center flex-col">
+                    <img class="w-16 h-16" src="./photo/undraw avatar.svg" alt="">
+                    <h1 class="text-4xl py-4 font-[Dosis] font-bold text-[#EF0BCE] ">Register Here</h1>
+                </div>
+
+                <!-- --------register form------------ -->
+                <form class="flex flex-col w-full " action="#">
+                    <!-- ----name input----- -->
+                    <div class="input-div flex items-center py-2 w-full ">
+                        <div class="usericon w-1/12">
+                            <i class="fa-solid fa-user text-[#EF0BCE] text-xl"></i>
+                        </div>
+                        <div class="pl-4 w-11/12">
+                            <input id="all" class="font-[Dosis] border-[#EF0BCE] border-2 pl-3 py-px text-lg rounded-full w-full caret-[#EF0BCE] shadow-inner" name="username" type="text" placeholder="Username">
+                        </div>
+                    </div>
+                    <!-- ----email input----- -->
+                    <div class="input-div flex items-center py-2 w-full ">
+                        <div class="usericon w-1/12">
+                            <i class="fa-solid fa-envelope text-[#EF0BCE] text-xl"></i>
+                        </div>
+                        <div class="pl-4 w-11/12">
+                            <input id="all" class="font-[Dosis] border-[#EF0BCE] border-2 pl-3 py-px text-lg rounded-full w-full caret-[#EF0BCE] shadow-inner" name="email" type="text" placeholder="Email">
+                        </div>
+
+                    </div>
+                    <!-- ----phone input----- -->
+                    <div class="input-div flex items-center py-2 w-full ">
+                        <div class="usericon w-1/12">
+                            <i class="fa-solid fa-phone text-[#EF0BCE] text-xl"></i>
+                        </div>
+                        <div class="pl-4 w-11/12">
+                            <input id="all" class="font-[Dosis] border-[#EF0BCE] border-2 pl-3 py-px text-lg rounded-full w-full caret-[#EF0BCE] shadow-inner" name="phone" type="number" placeholder="Phone">
+                        </div>
+
+                    </div>
+                    <!-- ----age input----- -->
+                    <div class="input-div flex items-center py-2 w-full ">
+                        <div class="usericon w-1/12">
+                            <i class="fa-solid fa-calendar-days text-[#EF0BCE] text-xl"></i>
+                        </div>
+                        <div class="pl-4 w-11/12">
+                            <input id="all" class="font-[Dosis] border-[#EF0BCE] border-2 pl-3 py-px text-lg rounded-full w-full caret-[#EF0BCE] shadow-inner" name="age" type="text" placeholder="age">
+                        </div>
+
+                    </div>
+                    <!-- ----skill input----- -->
+                    <div class="input-div flex items-center py-2 w-full ">
+                        <div class="usericon w-1/12">
+                            <i class="fa-solid fa-book text-[#EF0BCE] text-xl"></i>
+                        </div>
+                        <div class="pl-4 w-11/12">
+                            <select class="font-[Dosis] border-[#EF0BCE] border-2 pl-3 py-px text-lg rounded-full w-full caret-[#EF0BCE] shadow-inner px-3 cursor-pointer text-[#a3aab5]" name="skill" id="">
+                                <option value="">-Skill-</option>
+                                <option value="">MERN Stack</option>
+                                <option value="">PHP</option>
+                                <option value="">Python</option>
+                                <option value="">C#</option>
+                                <option value="">C++</option>
+                                <option value="">ML</option>
+                            </select>
+                        </div>
+
+                    </div>
+                    <!-- ----gender input----- -->
+                    <div class="input-div flex items-center py-2 w-full ">
+                        <div class="usericon w-1/12">
+                            <i class="fa-solid fa-person-half-dress text-[#EF0BCE] text-xl"></i>
+                        </div>
+                        <div class="pl-4 w-11/12">
+                            <select class="font-[Dosis] border-[#EF0BCE] border-2 pl-3 py-px text-lg rounded-full w-full caret-[#EF0BCE] shadow-inner px-3 cursor-pointer text-[#a3aab5]" name="gender" id="">
+                                <option value="">-Gender-</option>
+                                <option value="">Male</option>
+                                <option value="">Female</option>
+                            </select>
+                        </div>
+
+                    </div>
+                    <!-- ----password input----- -->
+                    <div class="input-div flex items-center  w-full">
+                        <div class="usericon w-1/12">
+                            <i class="fa-solid fa-lock text-[#EF0BCE] text-xl"></i>
+                        </div>
+                        <div class="pl-4 w-11/12 py-2 ">
+                            <input id="all" class="font-[Dosis] border-[#EF0BCE] border-2 pl-3 py-px text-lg rounded-full w-full caret-[#EF0BCE] shadow-inner" name="password" type="password" placeholder="Password">
+                        </div>
+                        
+                    </div>
+                    <!-- ----terms and condition----- -->
+                    <div class="flex justify-start py-2">
+                    <input class="pr-2"  type="checkbox"> <p class="pl-2">I read and agree terms and condition?</p>
+                    </div>
+
+                    <!-- ----submit input----- -->
+                    <input class="font-[Dosis] bg-[#EF0BCE] w-full mt-5 rounded-full text-white py-2 cursor-pointer transition-all hover:bg-[#9e288c]" type="submit" value="Register">
+
+                </form>
+            </div>
+
+            <!-- ----right bar----- -->
+            <div class="w-4/12">
+                <!-- ----icon----- -->
+                <img src="./photo/undraw_firmware_re_fgdy.svg" alt="">
+
+                <!-- ----login page switch----- -->
+                <div class="flex mt-12 justify-center items-center gap-2">
+
+                    <h3 class="">Already have an account?</h3>
+                    <a href="./login.html">
+                        <button class="font-[Dosis] bg-[#EF0BCE] rounded-full text-white py-2 px-10 cursor-pointer transition-all hover:bg-[#443742] ">Login</button>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<!-- -----js link-------- -->
+    <script>
+            all.onfocus = ()=>{
+            all.style.outline = "none"
+            all.style.border = "2px solid green"
+            all.style.transition = ".3s"
+        }
+        all.onblur = ()=>{
+            all.style.border = "2px solid #EF0BCE"
+        }
+    </script>
+</body>
+</html>

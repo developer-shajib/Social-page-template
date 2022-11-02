@@ -1153,6 +1153,11 @@ video {
   --tw-ring-color: rgb(8 145 178 / var(--tw-ring-opacity));
 }
 
+.ring-\[\#EF0BCE\] {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(239 11 206 / var(--tw-ring-opacity));
+}
+
 .ring-blue-700 {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(29 78 216 / var(--tw-ring-opacity));
